@@ -1,0 +1,419 @@
+{
+  "project": {
+    "name": "",
+    "project_id": ""
+  },
+  "workflow": {
+    "source": {
+      "secondary_branches": [],
+      "name": "",
+      "service": "github",
+      "accountId": "61152d80bdc249783f77f185",
+      "username": "christinaopsera",
+      "password": {
+        "name": "Vault Secured Key",
+        "vaultKey": "61152d80bdc249783f77f185-github"
+      },
+      "workspace": "",
+      "workspaceName": "",
+      "repository": "christinaopsera",
+      "repoId": "christinaopsera/christinaopsera",
+      "gitUrl": "https://github.com/christinaopsera/christinaopsera",
+      "sshUrl": "git@github.com:christinaopsera/christinaopsera.git",
+      "branch": "main",
+      "key": "",
+      "trigger_active": false,
+      "gitExportEnabled": true,
+      "gitExportPath": "testfolder"
+    },
+    "schedule": {
+      "start_date": null,
+      "end_date": null,
+      "frequency": ""
+    },
+    "last_step": {
+      "success": {
+        "step_id": "62a431ae6e26ea002b921432",
+        "activity_id": "62debc8fa90d220011caf6c8",
+        "status": "success",
+        "updatedAt": "2022-07-25T15:53:51.722Z"
+      },
+      "status": "stopped",
+      "step_id": "62a431ae6e26ea002b921432",
+      "check_count": 1
+    },
+    "last_run": {
+      "completed": "2022-07-25T15:54:01.970Z",
+      "run_count": 41,
+      "status": "success"
+    },
+    "plan": [
+      {
+        "tool": {
+          "tool_identifier": "terraform",
+          "configuration": {
+            "toolActionType": "EXECUTE",
+            "gitFilePath": "terraform",
+            "gitRepository": "azure-terraform",
+            "defaultBranch": "main",
+            "awsToolConfigId": "",
+            "accessKeyParamName": "",
+            "secretKeyParamName": "",
+            "regionParamName": "",
+            "type": "github",
+            "gitToolId": "60ee8dd8e110047cac00176b",
+            "gitRepositoryID": "purusothamanns/azure-terraform",
+            "sshUrl": "git@github.com:purusothamanns/azure-terraform.git",
+            "gitUrl": "https://github.com/purusothamanns/azure-terraform",
+            "bitbucketWorkspace": "",
+            "bitbucketWorkspaceName": "",
+            "customParameters": "",
+            "saveParameters": false,
+            "iamRoleFlag": false,
+            "roleArn": "",
+            "roleName": "",
+            "storeStateInBucket": false,
+            "bucketName": "",
+            "bucketRegion": "",
+            "cloudProvider": "azure",
+            "tag": "latest",
+            "resourceGroup": "opsera-octopus-rg",
+            "storageName": "opseraoctopusrga9ea",
+            "containerName": "629dbf405eb7a200eb6cc43544",
+            "azureToolConfigId": "613915d2bf4eb9874ee81a8f",
+            "terraformCloudId": "",
+            "organizationName": "",
+            "workspaceName": "",
+            "backendState": "AZURERM",
+            "azureCredentialId": "61fa285320b59d00117c47e6",
+            "inputParameters": [],
+            "saveInputParameters": false,
+            "stateRemote": true,
+            "stateFile": "manual",
+            "customScript": false,
+            "terraformCommands": "",
+            "saveEnvironmentVariables": false,
+            "environmentVariables": [],
+            "isVariableFile": false,
+            "inputFilePaths": [],
+            "azureCPCredentialId": "6239a88055bc52001740aee4",
+            "azureCPToolConfigId": "6239a82183f07e001754f5dd"
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null
+        },
+        "trigger": [],
+        "type": [
+          "infrastructure-code"
+        ],
+        "notification": [],
+        "tags": [],
+        "_id": "62a3ee8c6e26ea002b91fe32",
+        "name": "terraform new",
+        "description": "",
+        "active": false,
+        "updatedAt": "2022-06-11T01:23:24.874Z",
+        "tool_category": "infrastructure-code",
+        "orchestration_type": "standard"
+      },
+      {
+        "tool": {
+          "tool_identifier": "terraform",
+          "configuration": {
+            "toolActionType": "EXECUTE",
+            "gitFilePath": "terraform",
+            "gitRepository": "azure-terraform",
+            "defaultBranch": "credwithenv",
+            "awsToolConfigId": "",
+            "accessKeyParamName": "",
+            "secretKeyParamName": "",
+            "regionParamName": "",
+            "type": "github",
+            "gitToolId": "60ee8dd8e110047cac00176b",
+            "gitRepositoryID": "purusothamanns/azure-terraform",
+            "sshUrl": "git@github.com:purusothamanns/azure-terraform.git",
+            "gitUrl": "https://github.com/purusothamanns/azure-terraform",
+            "bitbucketWorkspace": "",
+            "bitbucketWorkspaceName": "",
+            "keyValueMap": {
+              "storage_name": "azureterraform5",
+              "resource_group_name": "terraform-storage",
+              "region": "westus"
+            },
+            "customParameters": "",
+            "saveParameters": false,
+            "iamRoleFlag": false,
+            "roleArn": "",
+            "roleName": "",
+            "storeStateInBucket": false,
+            "bucketName": "",
+            "bucketRegion": "",
+            "cloudProvider": "azure",
+            "tag": "latest",
+            "resourceGroup": "",
+            "storageName": "",
+            "containerName": "",
+            "azureToolConfigId": "",
+            "terraformCloudId": "",
+            "organizationName": "",
+            "workspaceName": "",
+            "backendState": "LOCAL",
+            "azureCredentialId": "",
+            "inputParameters": [
+              {
+                "parameterId": "62a4260abda865002b626e5a",
+                "parameterName": "opsera-azure-subscription_id",
+                "outputKey": "subscription_id"
+              },
+              {
+                "parameterId": "62a4264bbda865002b626e6e",
+                "parameterName": "opsera-azure-client_id",
+                "outputKey": "client_id"
+              },
+              {
+                "parameterId": "62a426756e26ea002b920a3e",
+                "parameterName": "opsera-azure-client_secret",
+                "outputKey": "client_secret"
+              },
+              {
+                "parameterId": "62a426276e26ea002b920a2a",
+                "parameterName": "opsera-azure-tenant_id",
+                "outputKey": "tenant_id"
+              }
+            ],
+            "saveInputParameters": false,
+            "stateRemote": false,
+            "stateFile": "",
+            "customScript": false,
+            "terraformCommands": "",
+            "saveEnvironmentVariables": false,
+            "environmentVariables": [],
+            "isVariableFile": false,
+            "inputFilePaths": [],
+            "azureCPCredentialId": "",
+            "azureCPToolConfigId": ""
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null
+        },
+        "trigger": [],
+        "type": [
+          "infrastructure-code"
+        ],
+        "notification": [],
+        "tags": [],
+        "_id": "62a4258a6e26ea002b9209fd",
+        "name": "Terraform With Runtime Variable",
+        "description": "",
+        "active": false,
+        "updatedAt": "2022-06-11T05:18:02.592Z",
+        "tool_category": "infrastructure-code",
+        "orchestration_type": "standard"
+      },
+      {
+        "tool": {
+          "tool_identifier": "terraform",
+          "configuration": {
+            "toolActionType": "EXECUTE",
+            "gitFilePath": "terraform",
+            "gitRepository": "azure-terraform",
+            "defaultBranch": "environment_variable",
+            "awsToolConfigId": "",
+            "accessKeyParamName": "",
+            "secretKeyParamName": "",
+            "regionParamName": "",
+            "type": "github",
+            "gitToolId": "60ee8dd8e110047cac00176b",
+            "gitRepositoryID": "purusothamanns/azure-terraform",
+            "sshUrl": "git@github.com:purusothamanns/azure-terraform.git",
+            "gitUrl": "https://github.com/purusothamanns/azure-terraform",
+            "bitbucketWorkspace": "",
+            "bitbucketWorkspaceName": "",
+            "keyValueMap": {
+              "storage_name": "azureterraformwithenv",
+              "resource_group_name": "terraform-storage",
+              "region": "westus"
+            },
+            "customParameters": "",
+            "saveParameters": false,
+            "iamRoleFlag": false,
+            "roleArn": "",
+            "roleName": "",
+            "storeStateInBucket": false,
+            "bucketName": "",
+            "bucketRegion": "",
+            "cloudProvider": "azure",
+            "tag": "latest",
+            "resourceGroup": "",
+            "storageName": "",
+            "containerName": "",
+            "azureToolConfigId": "6239a82183f07e001754f5dd",
+            "terraformCloudId": "",
+            "organizationName": "",
+            "workspaceName": "",
+            "backendState": "LOCAL",
+            "azureCredentialId": "6239a88055bc52001740aee4",
+            "inputParameters": [],
+            "saveInputParameters": false,
+            "stateRemote": false,
+            "stateFile": "",
+            "customScript": false,
+            "terraformCommands": "",
+            "saveEnvironmentVariables": false,
+            "environmentVariables": [],
+            "isVariableFile": false,
+            "inputFilePaths": [],
+            "azureCPCredentialId": "",
+            "azureCPToolConfigId": ""
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null
+        },
+        "trigger": [],
+        "type": [
+          "infrastructure-code"
+        ],
+        "notification": [],
+        "tags": [],
+        "_id": "62a42bd4bda865002b6270d3",
+        "name": "Terraform With Env Variable",
+        "description": "",
+        "active": false,
+        "updatedAt": "2022-06-11T05:44:52.172Z",
+        "tool_category": "infrastructure-code",
+        "orchestration_type": "standard"
+      },
+      {
+        "tool": {
+          "tool_identifier": "terraform",
+          "configuration": {
+            "toolActionType": "UPDATE",
+            "gitFilePath": "terraform",
+            "gitRepository": "azure-terraform",
+            "defaultBranch": "remotewithenv",
+            "awsToolConfigId": "",
+            "accessKeyParamName": "",
+            "secretKeyParamName": "",
+            "regionParamName": "",
+            "type": "github",
+            "gitToolId": "60ee8dd8e110047cac00176b",
+            "gitRepositoryID": "purusothamanns/azure-terraform",
+            "sshUrl": "git@github.com:purusothamanns/azure-terraform.git",
+            "gitUrl": "https://github.com/purusothamanns/azure-terraform",
+            "bitbucketWorkspace": "",
+            "bitbucketWorkspaceName": "",
+            "keyValueMap": {
+              "storage_name": "azureterraformwithsttwo",
+              "resource_group_name": "terraform-storage",
+              "region": "westus"
+            },
+            "customParameters": "",
+            "saveParameters": false,
+            "iamRoleFlag": false,
+            "roleArn": "",
+            "roleName": "",
+            "storeStateInBucket": false,
+            "bucketName": "",
+            "bucketRegion": "",
+            "cloudProvider": "azure",
+            "tag": "latest",
+            "resourceGroup": "",
+            "storageName": "",
+            "containerName": "",
+            "azureToolConfigId": "6239a82183f07e001754f5dd",
+            "terraformCloudId": "",
+            "organizationName": "",
+            "workspaceName": "",
+            "backendState": "AZURERM",
+            "azureCredentialId": "6239a88055bc52001740aee4",
+            "inputParameters": [
+              {
+                "parameterId": "62a4260abda865002b626e5a",
+                "parameterName": "opsera-azure-subscription_id",
+                "outputKey": "subscription_id"
+              },
+              {
+                "parameterId": "62a4264bbda865002b626e6e",
+                "parameterName": "opsera-azure-client_id",
+                "outputKey": "client_id"
+              },
+              {
+                "parameterId": "62a426756e26ea002b920a3e",
+                "parameterName": "opsera-azure-client_secret",
+                "outputKey": "client_secret"
+              },
+              {
+                "parameterId": "62a426276e26ea002b920a2a",
+                "parameterName": "opsera-azure-tenant_id",
+                "outputKey": "tenant_id"
+              }
+            ],
+            "saveInputParameters": false,
+            "stateRemote": true,
+            "stateFile": "automatic",
+            "customScript": false,
+            "terraformCommands": "",
+            "saveEnvironmentVariables": false,
+            "environmentVariables": [],
+            "isVariableFile": false,
+            "inputFilePaths": [],
+            "azureCPCredentialId": "",
+            "azureCPToolConfigId": ""
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null
+        },
+        "trigger": [],
+        "type": [
+          "infrastructure-code"
+        ],
+        "notification": [],
+        "tags": [],
+        "_id": "62a431ae6e26ea002b921432",
+        "name": "Azure Terraform With Env Variable Remote State",
+        "description": "",
+        "active": true,
+        "updatedAt": "2022-06-11T06:09:50.448Z",
+        "tool_category": "infrastructure-code",
+        "orchestration_type": "standard"
+      }
+    ],
+    "run_count": 41
+  },
+  "tags": [],
+  "type": [],
+  "_id": "62a0c172d612900029a5e58f",
+  "owner": "60157c8c70628140f776e359",
+  "roles": [
+    {
+      "_id": "62a0c172d612900029a5e590",
+      "role": "administrator",
+      "user": "hariharanj@yandex.com",
+      "group": null,
+      "createdAt": "2022-07-25T16:17:48.453Z",
+      "updatedAt": "2022-07-25T16:17:48.453Z"
+    }
+  ],
+  "organizationName": "opsera",
+  "account": "org102-acc",
+  "name": "Azure Terraform",
+  "template": "600ed1343b1f1ff3ed3d18d6",
+  "description": "New Template desc",
+  "active": true,
+  "createdAt": "2022-06-08T15:34:10.711Z",
+  "updatedAt": "2022-07-25T16:17:48.453Z",
+  "__v": 0,
+  "owner_name": "HariOwner Ldap"
+}
