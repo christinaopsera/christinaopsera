@@ -34,17 +34,17 @@
     "last_step": {
       "success": {
         "step_id": "62a431ae6e26ea002b921432",
-        "activity_id": "62debc8fa90d220011caf6c8",
+        "activity_id": "62def37cda60b3001189c38b",
         "status": "success",
-        "updatedAt": "2022-07-25T15:53:51.722Z"
+        "updatedAt": "2022-07-25T19:48:12.880Z"
       },
       "status": "stopped",
       "step_id": "62a431ae6e26ea002b921432",
       "check_count": 1
     },
     "last_run": {
-      "completed": "2022-07-25T15:54:01.970Z",
-      "run_count": 41,
+      "completed": "2022-07-25T19:48:23.161Z",
+      "run_count": 45,
       "status": "success"
     },
     "plan": [
@@ -390,7 +390,7 @@
         "orchestration_type": "standard"
       }
     ],
-    "run_count": 41
+    "run_count": 45
   },
   "tags": [],
   "type": [],
@@ -402,8 +402,8 @@
       "role": "administrator",
       "user": "hariharanj@yandex.com",
       "group": null,
-      "createdAt": "2022-07-25T16:17:48.453Z",
-      "updatedAt": "2022-07-25T16:17:48.453Z"
+      "createdAt": "2022-07-26T14:52:48.037Z",
+      "updatedAt": "2022-07-26T14:52:48.037Z"
     }
   ],
   "organizationName": "opsera",
@@ -413,7 +413,7 @@
   "description": "New Template desc",
   "active": true,
   "createdAt": "2022-06-08T15:34:10.711Z",
-  "updatedAt": "2022-07-25T16:17:48.453Z",
+  "updatedAt": "2022-07-26T14:52:48.037Z",
   "__v": 0,
   "owner_name": "HariOwner Ldap"
 }
